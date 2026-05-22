@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6A37D85A-6BEB-46D2-439F-413A5D157711}</ProjectGuid>
+    <ProjectGuid>{31F1A878-03D3-4059-A2EB-4C510E344005}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Santiago_Herrera__Miguel_Salazar_LAB_05</RootNamespace>
     <AssemblyName>Santiago Herrera, Miguel Salazar LAB 05</AssemblyName>
@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cotizacion.Designer.cs">
+      <DependentUpon>Cotizacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cotizacion.resx">
+      <DependentUpon>Cotizacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
