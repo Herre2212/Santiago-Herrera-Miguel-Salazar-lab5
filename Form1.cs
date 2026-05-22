@@ -31,5 +31,10 @@ namespace Santiago_Herrera__Miguel_Salazar_LAB_05
         {
 
         }
+
+        private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
+        {
+            pcPickUp.Visible = true;
+        }
     }
 }

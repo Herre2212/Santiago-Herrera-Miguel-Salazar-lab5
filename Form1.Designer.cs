@@ -33,8 +33,8 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pcPickUp = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pcPickUp)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -57,6 +57,7 @@
             this.radioButton1.TabIndex = 1;
             this.radioButton1.Text = "Sedan";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged_1);
             // 
             // radioButton2
             // 
@@ -92,22 +93,23 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Seleccionar el tipo de vehículo";
             // 
-            // pictureBox1
+            // pcPickUp
             // 
-            this.pictureBox1.Image = global::Santiago_Herrera__Miguel_Salazar_LAB_05.Properties.Resources.pick_up;
-            this.pictureBox1.Location = new System.Drawing.Point(454, 163);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(298, 171);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.pcPickUp.Image = global::Santiago_Herrera__Miguel_Salazar_LAB_05.Properties.Resources.pick_up;
+            this.pcPickUp.Location = new System.Drawing.Point(454, 163);
+            this.pcPickUp.Name = "pcPickUp";
+            this.pcPickUp.Size = new System.Drawing.Size(298, 171);
+            this.pcPickUp.TabIndex = 5;
+            this.pcPickUp.TabStop = false;
+            this.pcPickUp.Visible = false;
+            this.pcPickUp.Click += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pcPickUp);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
@@ -115,7 +117,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcPickUp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -128,7 +130,7 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pcPickUp;
     }
 }
 
