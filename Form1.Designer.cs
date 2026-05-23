@@ -41,6 +41,7 @@
             this.cbMotor = new System.Windows.Forms.CheckBox();
             this.cbAromatizante = new System.Windows.Forms.CheckBox();
             this.btLimpiar = new System.Windows.Forms.Button();
+            this.btCotizacion = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbPickUp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSedan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSUV)).BeginInit();
@@ -184,7 +185,7 @@
             // btLimpiar
             // 
             this.btLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLimpiar.Location = new System.Drawing.Point(141, 323);
+            this.btLimpiar.Location = new System.Drawing.Point(28, 323);
             this.btLimpiar.Name = "btLimpiar";
             this.btLimpiar.Size = new System.Drawing.Size(112, 36);
             this.btLimpiar.TabIndex = 12;
@@ -192,11 +193,24 @@
             this.btLimpiar.UseVisualStyleBackColor = true;
             this.btLimpiar.Click += new System.EventHandler(this.btLimpiar_Click);
             // 
+            // btCotizacion
+            // 
+            this.btCotizacion.AutoSize = true;
+            this.btCotizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCotizacion.Location = new System.Drawing.Point(205, 323);
+            this.btCotizacion.Name = "btCotizacion";
+            this.btCotizacion.Size = new System.Drawing.Size(198, 36);
+            this.btCotizacion.TabIndex = 13;
+            this.btCotizacion.Text = "Mostrar cotización";
+            this.btCotizacion.UseVisualStyleBackColor = true;
+            this.btCotizacion.Click += new System.EventHandler(this.btCotizacion_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(902, 468);
+            this.Controls.Add(this.btCotizacion);
             this.Controls.Add(this.btLimpiar);
             this.Controls.Add(this.cbAromatizante);
             this.Controls.Add(this.cbMotor);
@@ -236,6 +250,7 @@
         private System.Windows.Forms.CheckBox cbMotor;
         private System.Windows.Forms.CheckBox cbAromatizante;
         private System.Windows.Forms.Button btLimpiar;
+        private System.Windows.Forms.Button btCotizacion;
     }
 }
 

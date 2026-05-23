@@ -49,6 +49,19 @@ namespace Santiago_Herrera__Miguel_Salazar_LAB_05
             cbAspirado.Checked = false;
             cbEncerado.Checked = false;
             cbMotor.Checked = false;
+
+            pbPickUp.Visible = false;
+            pbSedan.Visible = false;
+            pbSUV.Visible = false;
+        }
+
+        private void btCotizacion_Click(object sender, EventArgs e)
+        {
+            Cotizacion cotizacion = new Cotizacion();
+            cotizacion.Show();
+            this.Hide();
+
+            cotizacion.FormClosed += (s, args) => this.Show();
         }
     }
 }

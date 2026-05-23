@@ -17,15 +17,22 @@ namespace Santiago_Herrera__Miguel_Salazar_LAB_05
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btCerrar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
             clServicios.Text = "Amarillo, azul";
 
+        }
+
+        private void btRegresar_Click(object sender, EventArgs e)
+        {
+            
+            this.Close();
+            Form1 form1 = (Form1)Application.OpenForms["Form1"];
         }
     }
 }
