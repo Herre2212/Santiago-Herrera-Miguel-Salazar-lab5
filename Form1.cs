@@ -15,26 +15,28 @@ namespace Santiago_Herrera__Miguel_Salazar_LAB_05
         public Form1()
         {
             InitializeComponent();
+            this.Text = "Santiago Herrera & Miguel Salazar - LAB 05";
         }
 
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        private void rbSedan_CheckedChanged(object sender, EventArgs e)
         {
-
+            pbSedan.Visible = true;
+            pbSUV.Visible = false;
+            pbPickUp.Visible = false;
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void rbSUV_CheckedChanged(object sender, EventArgs e)
         {
-
+            pbSUV.Visible = true;
+            pbSedan.Visible = false;
+            pbPickUp.Visible = false;
         }
 
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        private void rbPickUp_CheckedChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
-        {
-            pcPickUp.Visible = true;
+            pbPickUp.Visible = true;
+            pbSedan.Visible = false;
+            pbSUV.Visible = false;
         }
     }
 }

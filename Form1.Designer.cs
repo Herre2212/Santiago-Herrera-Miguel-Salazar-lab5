@@ -29,95 +29,134 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.rbSedan = new System.Windows.Forms.RadioButton();
+            this.rbSUV = new System.Windows.Forms.RadioButton();
+            this.rbPickUp = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.pcPickUp = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pcPickUp)).BeginInit();
+            this.pbPickUp = new System.Windows.Forms.PictureBox();
+            this.pbSedan = new System.Windows.Forms.PictureBox();
+            this.pbSUV = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPickUp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSedan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSUV)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Perpetua Titling MT", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(197, 20);
+            this.label1.Location = new System.Drawing.Point(148, 16);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(401, 44);
+            this.label1.Size = new System.Drawing.Size(327, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Lavautp Kuchau";
             // 
-            // radioButton1
+            // rbSedan
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(76, 163);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(102, 33);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.Text = "Sedan";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged_1);
+            this.rbSedan.AutoSize = true;
+            this.rbSedan.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbSedan.Location = new System.Drawing.Point(57, 132);
+            this.rbSedan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbSedan.Name = "rbSedan";
+            this.rbSedan.Size = new System.Drawing.Size(85, 28);
+            this.rbSedan.TabIndex = 1;
+            this.rbSedan.Text = "Sedan";
+            this.rbSedan.UseVisualStyleBackColor = true;
+            this.rbSedan.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // radioButton2
+            // rbSUV
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(76, 206);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(80, 33);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.Text = "SUV";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.rbSUV.AutoSize = true;
+            this.rbSUV.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbSUV.Location = new System.Drawing.Point(57, 167);
+            this.rbSUV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbSUV.Name = "rbSUV";
+            this.rbSUV.Size = new System.Drawing.Size(66, 28);
+            this.rbSUV.TabIndex = 2;
+            this.rbSUV.Text = "SUV";
+            this.rbSUV.UseVisualStyleBackColor = true;
+            this.rbSUV.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
-            // radioButton3
+            // rbPickUp
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(76, 244);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(118, 33);
-            this.radioButton3.TabIndex = 3;
-            this.radioButton3.Text = "Pick-up";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            this.rbPickUp.AutoSize = true;
+            this.rbPickUp.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbPickUp.Location = new System.Drawing.Point(57, 198);
+            this.rbPickUp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbPickUp.Name = "rbPickUp";
+            this.rbPickUp.Size = new System.Drawing.Size(98, 28);
+            this.rbPickUp.TabIndex = 3;
+            this.rbPickUp.Text = "Pick-up";
+            this.rbPickUp.UseVisualStyleBackColor = true;
+            this.rbPickUp.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(43, 111);
+            this.label2.Location = new System.Drawing.Point(32, 90);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(347, 29);
+            this.label2.Size = new System.Drawing.Size(288, 24);
             this.label2.TabIndex = 4;
             this.label2.Text = "Seleccionar el tipo de vehículo";
             // 
-            // pcPickUp
+            // pbPickUp
             // 
-            this.pcPickUp.Image = global::Santiago_Herrera__Miguel_Salazar_LAB_05.Properties.Resources.pick_up;
-            this.pcPickUp.Location = new System.Drawing.Point(454, 163);
-            this.pcPickUp.Name = "pcPickUp";
-            this.pcPickUp.Size = new System.Drawing.Size(298, 171);
-            this.pcPickUp.TabIndex = 5;
-            this.pcPickUp.TabStop = false;
-            this.pcPickUp.Visible = false;
-            this.pcPickUp.Click += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.pbPickUp.Image = global::Santiago_Herrera__Miguel_Salazar_LAB_05.Properties.Resources.pick_up;
+            this.pbPickUp.Location = new System.Drawing.Point(338, 113);
+            this.pbPickUp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbPickUp.Name = "pbPickUp";
+            this.pbPickUp.Size = new System.Drawing.Size(297, 170);
+            this.pbPickUp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbPickUp.TabIndex = 5;
+            this.pbPickUp.TabStop = false;
+            this.pbPickUp.Visible = false;
+            // 
+            // pbSedan
+            // 
+            this.pbSedan.Image = global::Santiago_Herrera__Miguel_Salazar_LAB_05.Properties.Resources.sedan;
+            this.pbSedan.Location = new System.Drawing.Point(338, 113);
+            this.pbSedan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbSedan.Name = "pbSedan";
+            this.pbSedan.Size = new System.Drawing.Size(299, 169);
+            this.pbSedan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbSedan.TabIndex = 6;
+            this.pbSedan.TabStop = false;
+            this.pbSedan.Visible = false;
+            // 
+            // pbSUV
+            // 
+            this.pbSUV.Image = global::Santiago_Herrera__Miguel_Salazar_LAB_05.Properties.Resources.suv;
+            this.pbSUV.Location = new System.Drawing.Point(338, 113);
+            this.pbSUV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbSUV.Name = "pbSUV";
+            this.pbSUV.Size = new System.Drawing.Size(300, 168);
+            this.pbSUV.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbSUV.TabIndex = 7;
+            this.pbSUV.TabStop = false;
+            this.pbSUV.Visible = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pcPickUp);
+            this.ClientSize = new System.Drawing.Size(677, 390);
+            this.Controls.Add(this.pbSUV);
+            this.Controls.Add(this.pbSedan);
+            this.Controls.Add(this.pbPickUp);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.rbPickUp);
+            this.Controls.Add(this.rbSUV);
+            this.Controls.Add(this.rbSedan);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pcPickUp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPickUp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSedan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSUV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,11 +165,13 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton rbSedan;
+        private System.Windows.Forms.RadioButton rbSUV;
+        private System.Windows.Forms.RadioButton rbPickUp;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pcPickUp;
+        private System.Windows.Forms.PictureBox pbPickUp;
+        private System.Windows.Forms.PictureBox pbSedan;
+        private System.Windows.Forms.PictureBox pbSUV;
     }
 }
 
