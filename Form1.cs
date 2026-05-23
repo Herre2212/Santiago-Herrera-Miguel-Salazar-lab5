@@ -57,11 +57,31 @@ namespace Santiago_Herrera__Miguel_Salazar_LAB_05
 
         private void btCotizacion_Click(object sender, EventArgs e)
         {
+
+            string tipoVehiculo = "";
+
+            if (rbSedan.Checked)
+            {
+                tipoVehiculo = "Sedán";
+            }
+            else if (rbSUV.Checked)
+            {
+                tipoVehiculo = "SUV";
+            }
+            else if (rbPickUp.Checked)
+            {
+                tipoVehiculo = "Pick-up";
+            }
+
+            Precios precios = new Precios(tipoVehiculo, cbAspirado.Checked, cbEncerado.Checked, cbMotor.Checked, cbAromatizante.Checked);
+
+
             Cotizacion cotizacion = new Cotizacion();
             cotizacion.Show();
             this.Hide();
 
             cotizacion.FormClosed += (s, args) => this.Show();
+
         }
     }
 }
