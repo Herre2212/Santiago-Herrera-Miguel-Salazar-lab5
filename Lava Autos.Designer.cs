@@ -63,7 +63,7 @@
             this.rbSedan.TabIndex = 1;
             this.rbSedan.Text = "Sedan";
             this.rbSedan.UseVisualStyleBackColor = true;
-            this.rbSedan.CheckedChanged += new System.EventHandler(this.rbSedan_CheckedChanged);
+            this.rbSedan.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // rbSUV
             // 
@@ -76,7 +76,7 @@
             this.rbSUV.TabIndex = 2;
             this.rbSUV.Text = "SUV";
             this.rbSUV.UseVisualStyleBackColor = true;
-            this.rbSUV.CheckedChanged += new System.EventHandler(this.rbSUV_CheckedChanged);
+            this.rbSUV.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // rbPickUp
             // 
@@ -89,7 +89,7 @@
             this.rbPickUp.TabIndex = 3;
             this.rbPickUp.Text = "Pick-up";
             this.rbPickUp.UseVisualStyleBackColor = true;
-            this.rbPickUp.CheckedChanged += new System.EventHandler(this.rbPickUp_CheckedChanged);
+            this.rbPickUp.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // label2
             // 
