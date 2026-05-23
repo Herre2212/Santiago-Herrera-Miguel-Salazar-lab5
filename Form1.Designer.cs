@@ -40,6 +40,7 @@
             this.cbEncerado = new System.Windows.Forms.CheckBox();
             this.cbMotor = new System.Windows.Forms.CheckBox();
             this.cbAromatizante = new System.Windows.Forms.CheckBox();
+            this.btLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbPickUp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSedan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSUV)).BeginInit();
@@ -180,11 +181,23 @@
             this.cbAromatizante.Text = "Aromatizante: B/. 1.50 ";
             this.cbAromatizante.UseVisualStyleBackColor = true;
             // 
+            // btLimpiar
+            // 
+            this.btLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLimpiar.Location = new System.Drawing.Point(141, 323);
+            this.btLimpiar.Name = "btLimpiar";
+            this.btLimpiar.Size = new System.Drawing.Size(112, 36);
+            this.btLimpiar.TabIndex = 12;
+            this.btLimpiar.Text = "Limpiar";
+            this.btLimpiar.UseVisualStyleBackColor = true;
+            this.btLimpiar.Click += new System.EventHandler(this.btLimpiar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(902, 468);
+            this.Controls.Add(this.btLimpiar);
             this.Controls.Add(this.cbAromatizante);
             this.Controls.Add(this.cbMotor);
             this.Controls.Add(this.cbEncerado);
@@ -222,6 +235,7 @@
         private System.Windows.Forms.CheckBox cbEncerado;
         private System.Windows.Forms.CheckBox cbMotor;
         private System.Windows.Forms.CheckBox cbAromatizante;
+        private System.Windows.Forms.Button btLimpiar;
     }
 }
 

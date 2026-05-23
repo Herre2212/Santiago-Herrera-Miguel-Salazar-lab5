@@ -38,5 +38,17 @@ namespace Santiago_Herrera__Miguel_Salazar_LAB_05
             pbSedan.Visible = false;
             pbSUV.Visible = false;
         }
+
+        private void btLimpiar_Click(object sender, EventArgs e)
+        {
+            rbPickUp.Checked = false;
+            rbSUV.Checked = false;
+            rbSedan.Checked = false;
+
+            cbAromatizante.Checked = false;
+            cbAspirado.Checked = false;
+            cbEncerado.Checked = false;
+            cbMotor.Checked = false;
+        }
     }
 }
