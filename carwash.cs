@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Santiago_Herrera__Miguel_Salazar_LAB_05
 {
-    public partial class Form1 : Form
+    public partial class carwash : Form
     {
-        public Form1()
+        public carwash()
         {
             InitializeComponent();
             this.Text = "Santiago Herrera & Miguel Salazar - LAB 05";

@@ -1,6 +1,6 @@
 ﻿namespace Santiago_Herrera__Miguel_Salazar_LAB_05
 {
-    partial class Form1
+    partial class carwash
     {
         /// <summary>
         /// Required designer variable.
@@ -51,9 +51,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Perpetua Titling MT", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(197, 20);
+            this.label1.Location = new System.Drawing.Point(210, 23);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(401, 44);
+            this.label1.Size = new System.Drawing.Size(327, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Lavautp Kuchau";
             // 
@@ -61,10 +62,10 @@
             // 
             this.rbSedan.AutoSize = true;
             this.rbSedan.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbSedan.Location = new System.Drawing.Point(76, 162);
-            this.rbSedan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rbSedan.Location = new System.Drawing.Point(57, 132);
+            this.rbSedan.Margin = new System.Windows.Forms.Padding(2);
             this.rbSedan.Name = "rbSedan";
-            this.rbSedan.Size = new System.Drawing.Size(199, 33);
+            this.rbSedan.Size = new System.Drawing.Size(163, 28);
             this.rbSedan.TabIndex = 1;
             this.rbSedan.Text = "Sedan B/. 6.00 ";
             this.rbSedan.UseVisualStyleBackColor = true;
@@ -74,10 +75,10 @@
             // 
             this.rbSUV.AutoSize = true;
             this.rbSUV.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbSUV.Location = new System.Drawing.Point(76, 206);
-            this.rbSUV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rbSUV.Location = new System.Drawing.Point(57, 167);
+            this.rbSUV.Margin = new System.Windows.Forms.Padding(2);
             this.rbSUV.Name = "rbSUV";
-            this.rbSUV.Size = new System.Drawing.Size(177, 33);
+            this.rbSUV.Size = new System.Drawing.Size(144, 28);
             this.rbSUV.TabIndex = 2;
             this.rbSUV.Text = "SUV B/. 8.00 ";
             this.rbSUV.UseVisualStyleBackColor = true;
@@ -87,10 +88,10 @@
             // 
             this.rbPickUp.AutoSize = true;
             this.rbPickUp.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbPickUp.Location = new System.Drawing.Point(76, 244);
-            this.rbPickUp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rbPickUp.Location = new System.Drawing.Point(57, 198);
+            this.rbPickUp.Margin = new System.Windows.Forms.Padding(2);
             this.rbPickUp.Name = "rbPickUp";
-            this.rbPickUp.Size = new System.Drawing.Size(229, 33);
+            this.rbPickUp.Size = new System.Drawing.Size(187, 28);
             this.rbPickUp.TabIndex = 3;
             this.rbPickUp.Text = "Pick-up B/. 10.00 ";
             this.rbPickUp.UseVisualStyleBackColor = true;
@@ -100,17 +101,18 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(43, 111);
+            this.label2.Location = new System.Drawing.Point(32, 90);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(347, 29);
+            this.label2.Size = new System.Drawing.Size(288, 24);
             this.label2.TabIndex = 4;
             this.label2.Text = "Seleccionar el tipo de vehículo";
             // 
             // pbPickUp
             // 
             this.pbPickUp.Image = global::Santiago_Herrera__Miguel_Salazar_LAB_05.Properties.Resources.pick_up;
-            this.pbPickUp.Location = new System.Drawing.Point(451, 139);
-            this.pbPickUp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbPickUp.Location = new System.Drawing.Point(338, 113);
+            this.pbPickUp.Margin = new System.Windows.Forms.Padding(2);
             this.pbPickUp.Name = "pbPickUp";
             this.pbPickUp.Size = new System.Drawing.Size(297, 170);
             this.pbPickUp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -121,8 +123,8 @@
             // pbSedan
             // 
             this.pbSedan.Image = global::Santiago_Herrera__Miguel_Salazar_LAB_05.Properties.Resources.sedan;
-            this.pbSedan.Location = new System.Drawing.Point(451, 139);
-            this.pbSedan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbSedan.Location = new System.Drawing.Point(338, 113);
+            this.pbSedan.Margin = new System.Windows.Forms.Padding(2);
             this.pbSedan.Name = "pbSedan";
             this.pbSedan.Size = new System.Drawing.Size(299, 169);
             this.pbSedan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -133,8 +135,8 @@
             // pbSUV
             // 
             this.pbSUV.Image = global::Santiago_Herrera__Miguel_Salazar_LAB_05.Properties.Resources.suv;
-            this.pbSUV.Location = new System.Drawing.Point(451, 139);
-            this.pbSUV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbSUV.Location = new System.Drawing.Point(338, 113);
+            this.pbSUV.Margin = new System.Windows.Forms.Padding(2);
             this.pbSUV.Name = "pbSUV";
             this.pbSUV.Size = new System.Drawing.Size(300, 168);
             this.pbSUV.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -145,9 +147,11 @@
             // cbAspirado
             // 
             this.cbAspirado.AutoSize = true;
-            this.cbAspirado.Location = new System.Drawing.Point(38, 390);
+            this.cbAspirado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbAspirado.Location = new System.Drawing.Point(36, 328);
+            this.cbAspirado.Margin = new System.Windows.Forms.Padding(2);
             this.cbAspirado.Name = "cbAspirado";
-            this.cbAspirado.Size = new System.Drawing.Size(179, 20);
+            this.cbAspirado.Size = new System.Drawing.Size(165, 19);
             this.cbAspirado.TabIndex = 8;
             this.cbAspirado.Text = "Aspirado interior: B/. 2.00 ";
             this.cbAspirado.UseVisualStyleBackColor = true;
@@ -155,9 +159,11 @@
             // cbEncerado
             // 
             this.cbEncerado.AutoSize = true;
-            this.cbEncerado.Location = new System.Drawing.Point(266, 390);
+            this.cbEncerado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbEncerado.Location = new System.Drawing.Point(216, 328);
+            this.cbEncerado.Margin = new System.Windows.Forms.Padding(2);
             this.cbEncerado.Name = "cbEncerado";
-            this.cbEncerado.Size = new System.Drawing.Size(140, 20);
+            this.cbEncerado.Size = new System.Drawing.Size(129, 19);
             this.cbEncerado.TabIndex = 9;
             this.cbEncerado.Text = "Encerado: B/. 4.00 ";
             this.cbEncerado.UseVisualStyleBackColor = true;
@@ -165,9 +171,11 @@
             // cbMotor
             // 
             this.cbMotor.AutoSize = true;
-            this.cbMotor.Location = new System.Drawing.Point(451, 390);
+            this.cbMotor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMotor.Location = new System.Drawing.Point(369, 328);
+            this.cbMotor.Margin = new System.Windows.Forms.Padding(2);
             this.cbMotor.Name = "cbMotor";
-            this.cbMotor.Size = new System.Drawing.Size(183, 20);
+            this.cbMotor.Size = new System.Drawing.Size(168, 19);
             this.cbMotor.TabIndex = 10;
             this.cbMotor.Text = "Lavado de motor: B/. 5.00 ";
             this.cbMotor.UseVisualStyleBackColor = true;
@@ -175,9 +183,11 @@
             // cbAromatizante
             // 
             this.cbAromatizante.AutoSize = true;
-            this.cbAromatizante.Location = new System.Drawing.Point(667, 390);
+            this.cbAromatizante.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbAromatizante.Location = new System.Drawing.Point(566, 328);
+            this.cbAromatizante.Margin = new System.Windows.Forms.Padding(2);
             this.cbAromatizante.Name = "cbAromatizante";
-            this.cbAromatizante.Size = new System.Drawing.Size(159, 20);
+            this.cbAromatizante.Size = new System.Drawing.Size(148, 19);
             this.cbAromatizante.TabIndex = 11;
             this.cbAromatizante.Text = "Aromatizante: B/. 1.50 ";
             this.cbAromatizante.UseVisualStyleBackColor = true;
@@ -185,9 +195,10 @@
             // btLimpiar
             // 
             this.btLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLimpiar.Location = new System.Drawing.Point(28, 323);
+            this.btLimpiar.Location = new System.Drawing.Point(57, 383);
+            this.btLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.btLimpiar.Name = "btLimpiar";
-            this.btLimpiar.Size = new System.Drawing.Size(112, 36);
+            this.btLimpiar.Size = new System.Drawing.Size(84, 29);
             this.btLimpiar.TabIndex = 12;
             this.btLimpiar.Text = "Limpiar";
             this.btLimpiar.UseVisualStyleBackColor = true;
@@ -197,19 +208,20 @@
             // 
             this.btCotizacion.AutoSize = true;
             this.btCotizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCotizacion.Location = new System.Drawing.Point(205, 323);
+            this.btCotizacion.Location = new System.Drawing.Point(298, 383);
+            this.btCotizacion.Margin = new System.Windows.Forms.Padding(2);
             this.btCotizacion.Name = "btCotizacion";
-            this.btCotizacion.Size = new System.Drawing.Size(198, 36);
+            this.btCotizacion.Size = new System.Drawing.Size(166, 30);
             this.btCotizacion.TabIndex = 13;
             this.btCotizacion.Text = "Mostrar cotización";
             this.btCotizacion.UseVisualStyleBackColor = true;
             this.btCotizacion.Click += new System.EventHandler(this.btCotizacion_Click);
             // 
-            // Form1
+            // carwash
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(986, 500);
+            this.ClientSize = new System.Drawing.Size(740, 437);
             this.Controls.Add(this.btCotizacion);
             this.Controls.Add(this.btLimpiar);
             this.Controls.Add(this.cbAromatizante);
@@ -224,8 +236,8 @@
             this.Controls.Add(this.rbSUV);
             this.Controls.Add(this.rbSedan);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "carwash";
             this.Text = "MiguelSalazar-SantiagoHerrera";
             ((System.ComponentModel.ISupportInitialize)(this.pbPickUp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSedan)).EndInit();

@@ -16,7 +16,7 @@ namespace Santiago_Herrera__Miguel_Salazar_LAB_05
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new carwash());
         }
     }
 }

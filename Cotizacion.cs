@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Santiago_Herrera__Miguel_Salazar_LAB_05
 {
@@ -21,7 +22,9 @@ namespace Santiago_Herrera__Miguel_Salazar_LAB_05
             item.SubItems.Add(precios.ObtenerPrecioBase().ToString("C2"));
             item.SubItems.Add(precios.CalcularTotal().ToString("C2"));
 
-            listView1.Items.Add(item);
+            lvCotizacion.Items.Add(item);
+
+            lvCotizacion.Columns[1].AutoResize(ColumnHeaderAutoResizeStyle.ColumnContent);
         }
 
         private void btCerrar_Click(object sender, EventArgs e)
