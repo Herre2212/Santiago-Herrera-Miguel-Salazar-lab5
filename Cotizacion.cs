@@ -1,20 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Santiago_Herrera__Miguel_Salazar_LAB_05
 {
     public partial class Cotizacion : Form
     {
-        public Cotizacion()
+        private Precios precios;
+
+        public Cotizacion(Precios precios)
         {
             InitializeComponent();
+            this.precios = precios;
+        }
+
+        private void Cotizacion_Load(object sender, EventArgs e)
+        {
+            ListViewItem item = new ListViewItem(precios.TipoVehiculo);
+
+            item.SubItems.Add(precios.ObtenerServiciosTexto());
+            item.SubItems.Add(precios.ObtenerPrecioBase().ToString("C2"));
+            item.SubItems.Add(precios.CalcularTotal().ToString("C2"));
+
+            listView1.Items.Add(item);
         }
 
         private void btCerrar_Click(object sender, EventArgs e)
@@ -22,17 +29,12 @@ namespace Santiago_Herrera__Miguel_Salazar_LAB_05
             Application.Exit();
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            clServicios.Text = "Amarillo, azul";
-
-        }
-
         private void btRegresar_Click(object sender, EventArgs e)
         {
-            
             this.Close();
-            Form1 form1 = (Form1)Application.OpenForms["Form1"];
         }
+
+        
+        
     }
 }

@@ -18,6 +18,8 @@ namespace Santiago_Herrera__Miguel_Salazar_LAB_05
             this.Text = "Santiago Herrera & Miguel Salazar - LAB 05";
         }
 
+        
+
         private void rbSedan_CheckedChanged(object sender, EventArgs e)
         {
             pbSedan.Visible = true;
@@ -57,7 +59,6 @@ namespace Santiago_Herrera__Miguel_Salazar_LAB_05
 
         private void btCotizacion_Click(object sender, EventArgs e)
         {
-
             string tipoVehiculo = "";
 
             if (rbSedan.Checked)
@@ -75,13 +76,11 @@ namespace Santiago_Herrera__Miguel_Salazar_LAB_05
 
             Precios precios = new Precios(tipoVehiculo, cbAspirado.Checked, cbEncerado.Checked, cbMotor.Checked, cbAromatizante.Checked);
 
-
-            Cotizacion cotizacion = new Cotizacion();
+            Cotizacion cotizacion = new Cotizacion(precios);
             cotizacion.Show();
             this.Hide();
 
             cotizacion.FormClosed += (s, args) => this.Show();
-
         }
     }
 }

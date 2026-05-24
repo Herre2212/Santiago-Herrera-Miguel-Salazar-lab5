@@ -50,11 +50,11 @@
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(55, 53);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(610, 325);
+            this.listView1.Size = new System.Drawing.Size(953, 322);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.Cotizacion_Load);
             // 
             // clTipoVehiculo
             // 
@@ -64,7 +64,7 @@
             // clServicios
             // 
             this.clServicios.Text = "Servicios adicionales";
-            this.clServicios.Width = 203;
+            this.clServicios.Width = 300;
             // 
             // clPrecioBase
             // 
@@ -74,6 +74,7 @@
             // clTotal
             // 
             this.clTotal.Text = "Total";
+            this.clTotal.Width = 90;
             // 
             // btCerrar
             // 
@@ -82,7 +83,7 @@
             this.btCerrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btCerrar.Location = new System.Drawing.Point(296, 417);
             this.btCerrar.Name = "btCerrar";
-            this.btCerrar.Size = new System.Drawing.Size(113, 42);
+            this.btCerrar.Size = new System.Drawing.Size(128, 56);
             this.btCerrar.TabIndex = 1;
             this.btCerrar.Text = "Cerrar";
             this.btCerrar.UseVisualStyleBackColor = false;
@@ -93,7 +94,7 @@
             this.btRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btRegresar.Location = new System.Drawing.Point(90, 416);
             this.btRegresar.Name = "btRegresar";
-            this.btRegresar.Size = new System.Drawing.Size(118, 41);
+            this.btRegresar.Size = new System.Drawing.Size(150, 57);
             this.btRegresar.TabIndex = 2;
             this.btRegresar.Text = "Regresar";
             this.btRegresar.UseVisualStyleBackColor = true;
@@ -104,12 +105,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(735, 480);
+            this.ClientSize = new System.Drawing.Size(1084, 543);
             this.Controls.Add(this.btRegresar);
             this.Controls.Add(this.btCerrar);
             this.Controls.Add(this.listView1);
             this.Name = "Cotizacion";
             this.Text = "Cotizacion";
+            this.Load += new System.EventHandler(this.Cotizacion_Load);
             this.ResumeLayout(false);
 
         }

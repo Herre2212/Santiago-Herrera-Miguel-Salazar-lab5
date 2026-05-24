@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Santiago_Herrera__Miguel_Salazar_LAB_05
 {
-    internal class Precios
+    public class Precios
     {
         private string tipoVehiculo;
         private bool aspirado;
@@ -28,17 +28,13 @@ namespace Santiago_Herrera__Miguel_Salazar_LAB_05
             double precioBase = 0;
 
             if (tipoVehiculo.Equals("Sedán"))
-            {
                 precioBase = 6.00;
-            }
+
             if (tipoVehiculo.Equals("SUV"))
-            {
                 precioBase = 8.00;
-            }
+
             if (tipoVehiculo.Equals("Pick-up"))
-            {
-                precioBase = 6.00;
-            }
+                precioBase = 10.00;
 
             return precioBase;
         }
@@ -47,22 +43,10 @@ namespace Santiago_Herrera__Miguel_Salazar_LAB_05
         {
             double total = 0;
 
-            if (aspirado)
-            {
-                total += 2.00;
-            }
-            if (encerado)
-            {
-                total += 4.00;
-            }
-            if (lavadoMotor)
-            {
-                total += 5.00;
-            }
-            if (aromatizante)
-            {
-                total += 1.50;
-            }
+            if (aspirado) total += 2.00;
+            if (encerado) total += 4.00;
+            if (lavadoMotor) total += 5.00;
+            if (aromatizante) total += 1.50;
 
             return total;
         }
@@ -76,28 +60,20 @@ namespace Santiago_Herrera__Miguel_Salazar_LAB_05
         {
             List<string> servicios = new List<string>();
 
-            if (aspirado)
-            {
-                servicios.Add("Aspirado interior");
-            }
-            if (encerado)
-            {
-                servicios.Add("Encerado");
-            }
-            if (lavadoMotor)
-            {
-                servicios.Add("Lavado de motor");
-            }
-            if (aromatizante)
-            {
-                servicios.Add("Aromatizante");
-            }
-
+            if (aspirado) servicios.Add("Aspirado interior");
+            if (encerado) servicios.Add("Encerado");
+            if (lavadoMotor) servicios.Add("Lavado de motor");
+            if (aromatizante) servicios.Add("Aromatizante");
 
             if (servicios.Count > 0)
                 return string.Join(", ", servicios);
             else
                 return "Ninguno";
+        }
+
+        public string TipoVehiculo
+        {
+            get { return tipoVehiculo; }
         }
     }
 }
